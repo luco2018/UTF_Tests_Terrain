@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 8bbb8a5cf4860fc43ba17adb360a4ca3
+labels:
+- physics
+- collision
+- tool
+- effect
+- reaction
+- material
+- interaction
+- curse
+- system
+- sound
+- particle
+- emitter
+- handle
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

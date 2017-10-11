@@ -1,0 +1,90 @@
+﻿using UnityEngine;
+using System.Collections.Generic;
+
+public class DrawByAPI : MonoBehaviour {
+
+	public Mesh[] meshes = null;
+	public Material material = null;
+
+	public float width = 100f;
+	public float height = 100f;
+	public float radius = 1.0f;
+	public float thickness = 10;
+
+	public bool animated = true;
+
+	class Instance
+	{
+		public Vector3 position;
+		public Quaternion rotation;
+		public Vector3 scaling;
+
+		public Vector3 rotationAxis;
+		public float rotationSpeed;
+
+		public MaterialPropertyBlock prop;
+	}
+
+	class MeshInstances
+	{
+		public Mesh mesh;
+		public List<Instance> instances;
+	}
+
+	List<MeshInstances> instances;
+
+	// Use this for initialization
+	void Start()
+	{
+		Random.InitState(1111);
+		int nSamples = 0;
+		PoissonDiscSampler sampler = new PoissonDiscSampler(width, height, radius);
+
+		instances = new List<MeshInstances>(meshes.Length);
+		for (int i = 0; i < meshes.Length; ++i)
+		{
+			MeshInstances meshInstances = new MeshInstances();
+			meshInstances.mesh = meshes[i];
+			meshInstances.instances = new List<Instance>();
+			instances.Add(meshInstances);
+		}
+
+		foreach (Vector2 sample in sampler.Samples())
+		{
+			++nSamples;
+
+			int selected = Random.Range(0, meshes.Length);
+
+			Instance i = new Instance();
+			i.position = new Vector3(sample.x, Random.Range(0, thickness), sample.y);
+			i.rotation = Random.rotation;
+			i.scaling = Vector3.one;
+			Random.rotation.ToAngleAxis(out i.rotationSpeed, out i.rotationAxis);
+			i.prop = new MaterialPropertyBlock();
+			float colorVarianceR = Random.Range(0.5f, 1.0f);
+			float colorVarianceG = Random.Range(0.5f, 1.0f);
+			float colorVarianceB = Random.Range(0.5f, 1.0f);
+			i.prop.SetColor("_Color", new Color(colorVarianceR, colorVarianceG, colorVarianceB));
+
+			instances[selected].instances.Add(i);
+		}
+
+		Debug.Log(nSamples + " rocks are spawned!");
+	}
+
+	// Update is called once per frame
+	void Update ()
+	{
+		foreach (var meshInstance in instances)
+		{
+			for (int i = 0; i < meshInstance.instances.Count; ++i)
+			{
+				var inst = meshInstance.instances[i];
+				if (animated)
+					inst.rotation = inst.rotation * Quaternion.AngleAxis(inst.rotationSpeed * Time.deltaTime, inst.rotationAxis);
+				var matrix = Matrix4x4.TRS(inst.position, inst.rotation, inst.scaling);
+				Graphics.DrawMesh(meshInstance.mesh, matrix, material, 0, null, 0, inst.prop);
+			}
+		}
+	}
+}

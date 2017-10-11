@@ -1,0 +1,44 @@
+#ifndef SPEEDTREE_SHADOW_INCLUDED
+#define SPEEDTREE_SHADOW_INCLUDED
+
+#include "SpeedTreeCommon.cginc"
+
+struct v2f 
+{
+	V2F_SHADOW_CASTER;
+	#ifdef SPEEDTREE_ALPHATEST
+		half2 uv : TEXCOORD1;
+	#endif
+	UNITY_DITHER_CROSSFADE_COORDS_IDX(2)
+	UNITY_VERTEX_INPUT_INSTANCE_ID
+	UNITY_VERTEX_OUTPUT_STEREO
+};
+
+v2f vert(SpeedTreeVB v)
+{
+	v2f o;
+	UNITY_SETUP_INSTANCE_ID(v);
+	UNITY_TRANSFER_INSTANCE_ID(v, o);
+	UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
+	#ifdef SPEEDTREE_ALPHATEST
+		o.uv = v.texcoord.xy;
+	#endif
+	OffsetSpeedTreeVertex(v, unity_LODFade.x);
+	TRANSFER_SHADOW_CASTER_NORMALOFFSET(o)
+	UNITY_TRANSFER_DITHER_CROSSFADE_HPOS(o, o.pos)
+
+	return o;
+}
+
+float4 frag(v2f i) : SV_Target
+{
+	UNITY_SETUP_INSTANCE_ID(i);
+	#ifdef SPEEDTREE_ALPHATEST
+		clip(tex2D(_MainTex, i.uv).a * _Color.a - _Cutoff);
+	#endif
+	UNITY_APPLY_DITHER_CROSSFADE(i)
+	SHADOW_CASTER_FRAGMENT(i)
+}
+
+
+#endif // SPEEDTREE_SHADOW_INCLUDED
