@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95285c6cacdfe25449799296c7d847ae, type: 3}
+  m_Name: Terrain
+  m_EditorClassIdentifier: 
+  suiteName: Terrain
+  isDebugSuite: 0
+  defaultTestSettings: {fileID: 0}
+  defaultRenderPipeline: {fileID: 0}
+  groups:
+  - groupName: Terrain Frame Comparison
+    tests:
+    - scene: {fileID: 102900000, guid: a3aacb033be004c018f91f4cde2ed41e, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/Terrain/2_SculptTerrain.unity
+      testTypes: 2
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 0
+    - scene: {fileID: 102900000, guid: 45c962ba7923f4895b31365e720f41d0, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/Terrain/3_Paint_Blended_Textures.unity
+      testTypes: 2
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 0
+    - scene: {fileID: 102900000, guid: d8f7f4529dca14708940f44313cc61f1, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/Terrain/4_Paint_Trees_Terrain.unity
+      testTypes: 2
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 0
+    - scene: {fileID: 102900000, guid: 0a1288172792d46ddb39181cda06a12f, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/Terrain/5_PaintFoliage.unity
+      testTypes: 2
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 0
+    - scene: {fileID: 102900000, guid: 1672640bc20192143bbc7ce99861550c, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/Terrain/6_Collisions.unity
+      testTypes: 2
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 0
+    - scene: {fileID: 102900000, guid: 99b85e90d5c61e747b9cd263cb774382, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/Terrain/7_Big Terrain Brush Rendering.unity
+      testTypes: 2
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 0
+    - scene: {fileID: 102900000, guid: 70b2ca054146d1642a5911803bbbb4ce, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/Terrain/8_ReflectionProbes.unity
+      testTypes: 2
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 0
+    - scene: {fileID: 102900000, guid: 005c64d5303cf9940a272f68cd454719, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/Terrain/9_Realtime GI.unity
+      testTypes: 2
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 0
+    - scene: {fileID: 102900000, guid: 7df0b944f2ba65049b7b41cb3bc00104, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/Terrain/10_BakedGI.unity
+      testTypes: 2
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 0
+    - scene: {fileID: 102900000, guid: a2a4978ed9df24b3ea34852c59cba572, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/Terrain/11_LightingScenarioTest.unity
+      testTypes: 2
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 0
+    - scene: {fileID: 102900000, guid: f90a8acb2ce64409db023bdb62a1e43c, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/Terrain/12_RestrictingTerrainResourses.unity
+      testTypes: 2
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 0

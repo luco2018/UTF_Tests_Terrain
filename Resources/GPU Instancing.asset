@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95285c6cacdfe25449799296c7d847ae, type: 3}
+  m_Name: GPU Instancing
+  m_EditorClassIdentifier: 
+  suiteName: GPU Instancing
+  isDebugSuite: 0
+  defaultTestSettings: {fileID: 0}
+  defaultRenderPipeline: {fileID: 0}
+  groups:
+  - groupName: GPU Instancing Fame Time
+    tests:
+    - scene: {fileID: 102900000, guid: f76ab52dc7afe498d99d7f1110661022, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/01_SimpleMultipleLights.unity
+      testTypes: 1
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 1
+    - scene: {fileID: 102900000, guid: 11302e111aea8584db7badbce8096412, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/02_RocksScene.unity
+      testTypes: 1
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 1
+    - scene: {fileID: 102900000, guid: 72644f8ab545ff04db9342f7e032f966, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/03_DrawMeshInstancedMixedScene.unity
+      testTypes: 1
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 1
+    - scene: {fileID: 102900000, guid: 7b850a57dc1704d5896b664669b896d1, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/04_AutomaticInstancingSubmeshes.unity
+      testTypes: 1
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 1
+    - scene: {fileID: 102900000, guid: 5c32d881db85e9149886a25328a8d191, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/05_AutomaticSpriteInstancing.unity
+      testTypes: 1
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 1
+    - scene: {fileID: 102900000, guid: 277216be7c7a544a8a28ba47ec4f8175, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/06_AutomaticSpeedTreeInstancingLODs.unity
+      testTypes: 1
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 1
+    - scene: {fileID: 102900000, guid: be1aa3b1d90714035a35334ae9e04207, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/07_DrawInstancedGameobjectNonInstancedPropertiesMixed.unity
+      testTypes: 1
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 1
+    - scene: {fileID: 102900000, guid: 72e0f730c2708b245bdb67f33c1a530a, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/08_DrawInstancedGameobjectTreePrefabs.unity
+      testTypes: 1
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 1
+    - scene: {fileID: 102900000, guid: fe43665e073d6bd488f3629b0f3720b1, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/09_AutomaticInstancingTreesWindZone.unity
+      testTypes: 1
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 1
+    - scene: {fileID: 102900000, guid: cdc8b4d2d6a48b143bdd4247ee02bc25, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/10_DrawMeshInstancedSubmesh.unity
+      testTypes: 1
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 1
+    - scene: {fileID: 102900000, guid: 4532fbdfc677c48acbc3f7b4a70ea94f, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/11_AutomaticInstancingSorting.unity
+      testTypes: 1
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 1

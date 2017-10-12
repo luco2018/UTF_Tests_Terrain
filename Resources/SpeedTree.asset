@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95285c6cacdfe25449799296c7d847ae, type: 3}
+  m_Name: SpeedTree
+  m_EditorClassIdentifier: 
+  suiteName: SpeedTree
+  isDebugSuite: 0
+  defaultTestSettings: {fileID: 0}
+  defaultRenderPipeline: {fileID: 0}
+  groups:
+  - groupName: SpeedTree Frame Comparison
+    tests:
+    - scene: {fileID: 102900000, guid: bc1f9b071f8b6467a8d4bde125a3755a, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/1_SpeedTree_Customization.unity
+      testTypes: 2
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 1
+    - scene: {fileID: 102900000, guid: 7ab528a45213c4bafbf076338a109034, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/2_SpeedTreeCrossfadePrefab.unity
+      testTypes: 2
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 1
+    - scene: {fileID: 102900000, guid: c41c2bc136b8a415d9c2c1e9ecfa0666, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/3_SpeedTreeCrossfadeSPM.unity
+      testTypes: 2
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 1
+    - scene: {fileID: 102900000, guid: 8ceddccf635d5493291919447f7dd271, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/4_BillboardShadowsTest.unity
+      testTypes: 2
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 1
+    - scene: {fileID: 102900000, guid: 44b09948ab6424b9f9e2bc27d4fda936, type: 3}
+      scenePath: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/5_SpeedTreeMassPlaceTreesWindZoneRestricting.unity
+      testTypes: 2
+      minimumUnityVersion: 1
+      platforms: 0
+      run: 1
