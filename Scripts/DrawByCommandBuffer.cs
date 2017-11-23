@@ -87,6 +87,7 @@ public class DrawByCommandBuffer : MonoBehaviour {
 			}
 
 			commandBuffer.DrawMeshInstanced(meshInstance.mesh, 0, material, 0, matrices, matrices.Length, meshInstance.props);
+            
 		}
 		Camera.main.AddCommandBuffer(UnityEngine.Rendering.CameraEvent.AfterForwardOpaque, commandBuffer);
 

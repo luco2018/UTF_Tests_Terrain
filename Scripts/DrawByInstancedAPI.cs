@@ -97,7 +97,7 @@ public class DrawByInstancedAPI : MonoBehaviour {
 				matrices[i] = Matrix4x4.TRS(inst.position, inst.rotation, inst.scaling);
 			}
 
-			Graphics.DrawMeshInstanced(meshInstance.mesh, 0, material, matrices, matrices.Length, meshInstance.props);
+			Graphics.DrawMeshInstanced(meshInstance.mesh, 0, material, matrices, matrices.Length, meshInstance.props, UnityEngine.Rendering.ShadowCastingMode.Off);
 		}
 	}
 }
