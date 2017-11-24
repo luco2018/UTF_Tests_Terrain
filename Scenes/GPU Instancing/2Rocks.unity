@@ -272,7 +272,7 @@ MonoBehaviour:
     waitType: 1
     waitFrames: 1
     waitSeconds: 2
-    passFailThreshold: 0.1
+    passFailThreshold: 0.2
     captureCamera: {fileID: 0}
     frameResolution: 1
     textureFormat: 3
