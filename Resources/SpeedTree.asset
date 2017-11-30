@@ -19,37 +19,43 @@ MonoBehaviour:
   groups:
   - groupName: FrameComparison
     tests:
-    - scene: {fileID: 102900000, guid: bc1f9b071f8b6467a8d4bde125a3755a, type: 3}
+    - name: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/1SpeedTree_Customization.unity
+      scene: {fileID: 102900000, guid: bc1f9b071f8b6467a8d4bde125a3755a, type: 3}
       scenePath: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/1SpeedTree_Customization.unity
       testTypes: 2
       minimumUnityVersion: 1
       platforms: -1
       run: 1
-    - scene: {fileID: 102900000, guid: 7ab528a45213c4bafbf076338a109034, type: 3}
+    - name: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/2SpeedTreeCrossfadePrefab.unity
+      scene: {fileID: 102900000, guid: 7ab528a45213c4bafbf076338a109034, type: 3}
       scenePath: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/2SpeedTreeCrossfadePrefab.unity
       testTypes: 2
       minimumUnityVersion: 1
       platforms: -1
       run: 1
-    - scene: {fileID: 102900000, guid: c41c2bc136b8a415d9c2c1e9ecfa0666, type: 3}
+    - name: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/3SpeedTreeCrossfadeSPM.unity
+      scene: {fileID: 102900000, guid: c41c2bc136b8a415d9c2c1e9ecfa0666, type: 3}
       scenePath: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/3SpeedTreeCrossfadeSPM.unity
       testTypes: 2
       minimumUnityVersion: 1
       platforms: -1
       run: 1
-    - scene: {fileID: 102900000, guid: 8ceddccf635d5493291919447f7dd271, type: 3}
+    - name: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/4BillboardShadowsTest.unity
+      scene: {fileID: 102900000, guid: 8ceddccf635d5493291919447f7dd271, type: 3}
       scenePath: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/4BillboardShadowsTest.unity
       testTypes: 2
       minimumUnityVersion: 1
       platforms: -1
       run: 1
-    - scene: {fileID: 102900000, guid: 44b09948ab6424b9f9e2bc27d4fda936, type: 3}
+    - name: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/5TreeMassPlaceWind.unity
+      scene: {fileID: 102900000, guid: 44b09948ab6424b9f9e2bc27d4fda936, type: 3}
       scenePath: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/5TreeMassPlaceWind.unity
       testTypes: 2
       minimumUnityVersion: 1
       platforms: -1
       run: 1
-    - scene: {fileID: 102900000, guid: 205cc77a6b5f1e04199dadb594b77d4d, type: 3}
+    - name: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/6BillboardBatchedRendering.unity
+      scene: {fileID: 102900000, guid: 205cc77a6b5f1e04199dadb594b77d4d, type: 3}
       scenePath: Assets/UTF_Tests_Terrain/Scenes/SpeedTree/6BillboardBatchedRendering.unity
       testTypes: 2
       minimumUnityVersion: 1

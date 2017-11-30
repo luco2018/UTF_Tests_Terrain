@@ -18,55 +18,64 @@ MonoBehaviour:
   groups:
   - groupName: FrameComparison
     tests:
-    - scene: {fileID: 102900000, guid: f76ab52dc7afe498d99d7f1110661022, type: 3}
+    - name: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/1SimpleCubes.unity
+      scene: {fileID: 102900000, guid: f76ab52dc7afe498d99d7f1110661022, type: 3}
       scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/1SimpleCubes.unity
       testTypes: 2
       minimumUnityVersion: 1
       platforms: -1
       run: 1
-    - scene: {fileID: 102900000, guid: 11302e111aea8584db7badbce8096412, type: 3}
+    - name: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/2Rocks.unity
+      scene: {fileID: 102900000, guid: 11302e111aea8584db7badbce8096412, type: 3}
       scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/2Rocks.unity
       testTypes: 2
       minimumUnityVersion: 1
       platforms: -1
       run: 1
-    - scene: {fileID: 102900000, guid: 72644f8ab545ff04db9342f7e032f966, type: 3}
+    - name: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/3DMIMixed.unity
+      scene: {fileID: 102900000, guid: 72644f8ab545ff04db9342f7e032f966, type: 3}
       scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/3DMIMixed.unity
       testTypes: 2
       minimumUnityVersion: 1
       platforms: -1
       run: 1
-    - scene: {fileID: 102900000, guid: 7b850a57dc1704d5896b664669b896d1, type: 3}
+    - name: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/4RenderloopSubmesh.unity
+      scene: {fileID: 102900000, guid: 7b850a57dc1704d5896b664669b896d1, type: 3}
       scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/4RenderloopSubmesh.unity
       testTypes: 2
       minimumUnityVersion: 1
       platforms: -1
       run: 1
-    - scene: {fileID: 102900000, guid: 277216be7c7a544a8a28ba47ec4f8175, type: 3}
+    - name: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/6TreeLOD.unity
+      scene: {fileID: 102900000, guid: 277216be7c7a544a8a28ba47ec4f8175, type: 3}
       scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/6TreeLOD.unity
       testTypes: 2
       minimumUnityVersion: 1
       platforms: -1
       run: 1
-    - scene: {fileID: 102900000, guid: be1aa3b1d90714035a35334ae9e04207, type: 3}
+    - name: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/7DMIPropMixed.unity
+      scene: {fileID: 102900000, guid: be1aa3b1d90714035a35334ae9e04207, type: 3}
       scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/7DMIPropMixed.unity
       testTypes: 2
       minimumUnityVersion: 1
       platforms: -1
       run: 1
-    - scene: {fileID: 102900000, guid: 72e0f730c2708b245bdb67f33c1a530a, type: 3}
+    - name: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/8DMITrees.unity
+      scene: {fileID: 102900000, guid: 72e0f730c2708b245bdb67f33c1a530a, type: 3}
       scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/8DMITrees.unity
       testTypes: 2
       minimumUnityVersion: 1
       platforms: -1
       run: 1
-    - scene: {fileID: 102900000, guid: cdc8b4d2d6a48b143bdd4247ee02bc25, type: 3}
+    - name: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/10DMISubmesh.unity
+      scene: {fileID: 102900000, guid: cdc8b4d2d6a48b143bdd4247ee02bc25, type: 3}
       scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/10DMISubmesh.unity
       testTypes: 2
       minimumUnityVersion: 1
       platforms: -1
       run: 1
-    - scene: {fileID: 102900000, guid: 4532fbdfc677c48acbc3f7b4a70ea94f, type: 3}
+    - name: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/11RenderloopSorting.unity
+      scene: {fileID: 102900000, guid: 4532fbdfc677c48acbc3f7b4a70ea94f, type: 3}
       scenePath: Assets/UTF_Tests_Terrain/Scenes/GPU Instancing/11RenderloopSorting.unity
       testTypes: 2
       minimumUnityVersion: 1
